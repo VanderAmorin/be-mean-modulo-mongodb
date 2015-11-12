@@ -2,7 +2,7 @@
 autor: Vander Amorin
 
 ## Listar todos os Pokemons com altura menor que 0.5
-be-mean-instagram> var query = {height: {$lt: 0.5}}
+```be-mean-instagram> var query = {height: {$lt: 0.5}}
 Ubuntu-VirtualBox(mongod-3.0.7) be-mean-instagram> db.pokemons.find(query)
 {
 	"_id": ObjectId("564294113a1ae06e90375de3"),
@@ -45,11 +45,11 @@ Ubuntu-VirtualBox(mongod-3.0.7) be-mean-instagram> db.pokemons.find(query)
 	"attack": 30,
 	"height": 0.3
 }
-Fetched 5 record(s) in 66ms
+Fetched 5 record(s) in 66ms```
 
 
 ## Listar todos os Pokemons com altura maior ou igual a 0.5
-be-mean-instagram> var query = {height: {$gte: 0.5}}
+```be-mean-instagram> var query = {height: {$gte: 0.5}}
 Ubuntu-VirtualBox(mongod-3.0.7) be-mean-instagram> db.pokemons.find(query)
 {
 	"_id": ObjectId("564296b83a1ae06e90375de5"),
@@ -99,11 +99,11 @@ Ubuntu-VirtualBox(mongod-3.0.7) be-mean-instagram> db.pokemons.find(query)
 	"attack": 20,
 	"height": 0.6
 }
-Fetched 6 record(s) in 4ms
+Fetched 6 record(s) in 4ms```
 
 
 ## Listar todos os pokemons com altura menor ou igual a 0.5 E do tipo grama
-be-mean-instagram> var query = { $and: [{height: {$lte: 0.5}}, {type: 'grama'}] }
+```be-mean-instagram> var query = { $and: [{height: {$lte: 0.5}}, {type: 'grama'}] }
 Ubuntu-VirtualBox(mongod-3.0.7) be-mean-instagram> db.pokemons.find(query)
 {
 	"_id": ObjectId("564294f43a1ae06e90375de4"),
@@ -113,11 +113,11 @@ Ubuntu-VirtualBox(mongod-3.0.7) be-mean-instagram> db.pokemons.find(query)
 	"attack": 49,
 	"height": 0.4
 }
-Fetched 1 record(s) in 1ms
+Fetched 1 record(s) in 1ms```
 
 
 ## Listar todos os pokemons com name 'Pikachu' ou com ataque menor ou igual a 0.5
-be-mean-instagram> var query = { $or: [ {name: 'Pikachu'}, {attack: {$lte: 0.5}} ] }
+```be-mean-instagram> var query = { $or: [ {name: 'Pikachu'}, {attack: {$lte: 0.5}} ] }
 Ubuntu-VirtualBox(mongod-3.0.7) be-mean-instagram> db.pokemons.find(query)
 {
 	"_id": ObjectId("564294113a1ae06e90375de3"),
@@ -135,11 +135,11 @@ Ubuntu-VirtualBox(mongod-3.0.7) be-mean-instagram> db.pokemons.find(query)
 	"attack": 0,
 	"height": 0.6
 }
-Fetched 2 record(s) in 1ms
+Fetched 2 record(s) in 1ms```
 
 
 ## Listar todos os Pokemons com o attack maior ou igual a 48 e com height menor ou igual a 0.5
-be-mean-instagram> var query = { $and: [ {attack: {$gte: 48}}, {height: {$lte: 0.5}} ] }
+```be-mean-instagram> var query = { $and: [ {attack: {$gte: 48}}, {height: {$lte: 0.5}} ] }
 Ubuntu-VirtualBox(mongod-3.0.7) be-mean-instagram> db.pokemons.find(query)
 {
 	"_id": ObjectId("564294113a1ae06e90375de3"),
@@ -166,3 +166,4 @@ Ubuntu-VirtualBox(mongod-3.0.7) be-mean-instagram> db.pokemons.find(query)
 	"height": 0.5
 }
 Fetched 3 record(s) in 2ms
+```
